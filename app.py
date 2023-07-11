@@ -4,7 +4,7 @@ import os
 
 # アクセスの為のキーをopenai.api_keyに代入し、設定
 # ここにご自身のAPIキーを入力してください！
-openai.api_key = os.environ["openai"]
+openai.api_key = st.secrets.api.key
 
 content_kind_of =[
     "中立的で客観的な文章",
